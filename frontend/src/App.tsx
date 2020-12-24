@@ -1,9 +1,14 @@
 import { Router, Link } from "@reach/router";
+import Auth from "./modules/auth/auth.page";
+import Login from "./modules/auth/login.page";
+import Register from "./modules/auth/register.page";
+import Blog from "./modules/blog/blog.page";
+import UserById from "./modules/user/user.page";
 
 const App = () => (
   <div>
     <nav>
-      <Link to="/">Home</Link> <Link to="dashboard">Dashboard</Link>
+      <Link to="/">Blog</Link> <Link to="user/34">Dashboard</Link>
     </nav>
     <Router>
       <Blog path="/" />
@@ -11,9 +16,7 @@ const App = () => (
         <Login path="login" />
         <Register path="register" />
       </Auth>
-      <User path="user">
-        <UserById path="user/:userId" />
-      </User>
+      <UserById path="user/:userById" />
     </Router>
   </div>
 );
