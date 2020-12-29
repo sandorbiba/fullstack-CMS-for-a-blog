@@ -1,22 +1,13 @@
 {
   "name": "blog",
-  "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "yarn wsrun dev",
-    "build": "yarn wsrun build",
-    "lint": "yarn wsrun lint",
-    "start": "cd backend && yarn start:prod",
-    "postinstall": "yarn build"
-  },
-  "engines": {
-    "node": "12.18.1"
-  },
-  "workspaces": [
-    "backend",
-    "frontend"
-  ],
   "devDependencies": {
-    "wsrun": "^5.2.4"
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "publish": "lerna run build && lerna publish",
+    "dev": "lerna run dev",
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap"
   }
 }

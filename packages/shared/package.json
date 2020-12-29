@@ -1,0 +1,40 @@
+{
+  "name": "@sandorbiba/shared",
+  "version": "1.0.1",
+  "description": "> TODO: description",
+  "author": "Sandor Biba <sandorbiba@gmail.com>",
+  "homepage": "https://github.com/sandorbiba/fullstack-CMS-for-a-blog#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandorbiba/fullstack-CMS-for-a-blog.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/sandorbiba/fullstack-CMS-for-a-blog/issues"
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.6.4",
+    "@nestjs/core": "^7.6.4",
+    "@nestjs/swagger": "^4.7.9",
+    "class-transformer": "^0.3.1",
+    "class-validator": "^0.12.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
